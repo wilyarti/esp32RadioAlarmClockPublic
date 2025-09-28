@@ -1,7 +1,8 @@
-Thanks to:
-https://oleddisplay.squix.ch/ <- font generation
-https://javl.github.io/image2cpp/
-https://www.svgrepo.com/svg/521874/telegram
+# Thanks to:
+- https://oleddisplay.squix.ch/ <- font generation
+- https://javl.github.io/image2cpp/
+- https://www.svgrepo.com/svg/521874/telegram
+- Volos Projects for inspiration
 
 I'll help if you need it. Basically in TFT eSPI library set the config for your screen.
 
@@ -17,7 +18,7 @@ Looks like this:
 
 ![Example of device screen.](lib/image.bmp)
 
-Features:
+# Features:
 1. Preferences.h configuration of almost all functions
 2. Stores 5 WiFi APs and tries each on boot
 3. Stores 8 Radio Stations
@@ -33,18 +34,25 @@ Features:
 13. Has battery and wifi signal icons
 14. Lots of other stuff I forgot
 
-Bugs:
+# Bugs:
 For some reason it plays fine when I proxy high bitrate music streams through my personal server, but struggles when directly streaming.
 Some other random memory leaks.
 This device isnt super powerful so graphic updates are gradual. Like individual letters, numbers etc are deleted and redrawn. 
 
-Design:
+# Design:
 Uses a "fat struct" called g_machine for almost everything it runs. I've put the functions into seperate libraries. The crazy thing is how good the sound quality is....
+As for the hardware I basically just threw parts together.
 
-Parts list:
-TTGO T4 v1.1 (old stock I had)
-2PCS 2" 4Ohm 3W DIY Small Full Range Audio Speaker
-TPA3110 XH-A232 30W+30W 2.0 Channel Digital Stereo Audio Power Amplifier Board DC 8-26V 3A
-MCU-219 INA219 I2C port Zero drift bidirectional current power supply monitoring sensor module
-TPS61088 5V 9V 12V Adjustable Boost Step Up Board Module Switch Power Supply Module 
-3.7V 2500mAh battery (salvaged from somewhere)
+# Parts list:
+- TTGO T4 v1.1 (old stock I had)
+- 2PCS 2" 4Ohm 3W DIY Small Full Range Audio Speaker
+- TPA3110 XH-A232 30W+30W 2.0 Channel Digital Stereo Audio Power Amplifier Board DC 8-26V 3A
+- MCU-219 INA219 I2C port Zero drift bidirectional current power supply monitoring sensor module
+- TPS61088 5V 9V 12V Adjustable Boost Step Up Board Module Switch Power Supply Module 
+- 3.7V 2500mAh battery (salvaged from somewhere)
+- Interface I2S PCM5102A DAC Decoder GY-PCM5102 I2S Player
+
+<img width="1034" height="775" alt="image" src="https://github.com/user-attachments/assets/f876ded7-bd4e-4d9b-9dbe-3961468afdad" />
+<img width="1132" height="710" alt="image" src="https://github.com/user-attachments/assets/a12d9343-d515-4665-b2be-27745a27e168" />
+
+
