@@ -17,6 +17,8 @@ The license is BSD 2 Clause. Have fun.
 Looks like this:
 
 ![Example of device screen.](lib/image.bmp)
+![Example of device screen.](lib/image2.bmp)
+
 
 # Features:
 1. Preferences.h configuration of almost all functions
